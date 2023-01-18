@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:8000/review/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome To Uncut</title>
+        <link rel="stylesheet" type="text/css" href="./Welcome To Uncut_files/bootstrap.css">
+        <script src="./Welcome To Uncut_files/jquery.min.js.download"></script>
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /> -->
+        <style>
+            select {width: 20em;}
+        </style>
+    <style id="multiselect_dropdown_styles">
+.multiselect-dropdown{
+  display: inline-block;
+  padding: 2px 5px 0px 5px;
+  border-radius: 4px;
+  border: solid 1px #ced4da;
+  background-color: white;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+}
+.multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
+  margin-right:0.5em; 
+  margin-bottom:2px;
+  padding:1px 0; 
+  border-radius: 4px; 
+  display:inline-block;
+}
+.multiselect-dropdown span.optext{
+  background-color:lightgray;
+  padding:1px 0.75em; 
+}
+.multiselect-dropdown span.optext .optdel {
+  float: right;
+  margin: 0 -6px 1px 5px;
+  font-size: 0.7em;
+  margin-top: 2px;
+  cursor: pointer;
+  color: #666;
+}
+.multiselect-dropdown span.optext .optdel:hover { color: #c66;}
+.multiselect-dropdown span.placeholder{
+  color:#ced4da;
+}
+.multiselect-dropdown-list-wrapper{
+  box-shadow: gray 0 3px 8px;
+  z-index: 100;
+  padding:2px;
+  border-radius: 4px;
+  border: solid 1px #ced4da;
+  display: none;
+  margin: -1px;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+.multiselect-dropdown-list-wrapper .multiselect-dropdown-search{
+  margin-bottom:5px;
+}
+.multiselect-dropdown-list{
+  padding:2px;
+  height: 15rem;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+.multiselect-dropdown-list::-webkit-scrollbar {
+  width: 6px;
+}
+.multiselect-dropdown-list::-webkit-scrollbar-thumb {
+  background-color: #bec4ca;
+  border-radius:3px;
+}
+
+.multiselect-dropdown-list div{
+  padding: 5px;
+}
+.multiselect-dropdown-list input{
+  height: 1.15em;
+  width: 1.15em;
+  margin-right: 0.35em;  
+}
+.multiselect-dropdown-list div.checked{
+}
+.multiselect-dropdown-list div:hover{
+  background-color: #ced4da;
+}
+.multiselect-dropdown span.maxselected {width:100%;}
+.multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
+</style></head>
+    <body class="bg-transparent" data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
+        <div>
+    <nav class="navbar navbar-expand-lg border bg-white">
+        <div class="container-fluid" style="width: 70%;">
+        <a class="navbar-brand" href="http://localhost:8000/">Uncut</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/add">Add Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/global">Global Keywords</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/profiles">Customers List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/review">Review System</a>
+            </li>
+            </ul>
+
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <p>Hello, Ash</p>
+                </li>
+                <li>
+                    <a class="nav-link" href="/logout/">Logout</a>
+                </li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item h5 text-center" style="margin-top: auto;">Ash</li> &nbsp; &nbsp; &nbsp;
+                <li class="nav-item"><a class="nav-link" href="http://localhost:8000/logout/">Log out</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+</div>
+        <div>
+            
+<div class="container-fluid" style="width: 70%;">
+    <!-- <form action="." method="POST" class="row mt-3 mb-3 align-items-center ng-untouched ng-pristine ng-valid">
+        <div class="form-group dropdown with-clear">
+            <label for="foractors">Actors:</label>
+            <input name="actor-names" id="actors" class="form-control ng-pristine ng-valid ng-touched">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <span class="dropdown-item">Action</span>
+                  <span class="dropdown-item">Another action</span>
+                  <span class="dropdown-item">Something else here</span>
+                </div>
+        </div>
+    </form> -->
+    <br>
+    <div id="updateform">
+                        <form action="http://localhost:8000/review/" method="POST" id="6" class="myformsubmit"></form>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="7Apd3mAqFR5E8ZbjK0ew8IrboC2SwgfjzsfuOw0ql2FBTfXlPQnRWdqgImGfB7Yx">
+                            </div><div id="updateform">
+                        <form action="http://localhost:8000/review/" method="POST" id="11" class="myformsubmit"></form>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="7Apd3mAqFR5E8ZbjK0ew8IrboC2SwgfjzsfuOw0ql2FBTfXlPQnRWdqgImGfB7Yx">
+                            </div><div id="updateform">
+                        <form action="http://localhost:8000/review/" method="POST" id="1" class="myformsubmit"></form>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="7Apd3mAqFR5E8ZbjK0ew8IrboC2SwgfjzsfuOw0ql2FBTfXlPQnRWdqgImGfB7Yx">
+                            </div><div id="updateform">
+                        <form action="http://localhost:8000/review/" method="POST" id="30" class="myformsubmit"></form>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="7Apd3mAqFR5E8ZbjK0ew8IrboC2SwgfjzsfuOw0ql2FBTfXlPQnRWdqgImGfB7Yx">
+                            </div><div id="updateform">
+                        <form action="http://localhost:8000/review/" method="POST" id="10" class="myformsubmit"></form>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="7Apd3mAqFR5E8ZbjK0ew8IrboC2SwgfjzsfuOw0ql2FBTfXlPQnRWdqgImGfB7Yx">
+                            </div><table class="table border table-striped table-bordered table-responsive">
+        <thead class="thead-dark border-3">
+                <tr><th class="col-md-3">Profile</th>
+                <th class="col-md">Role</th>
+                <th class="col-md-2">Status</th>
+            
+        </tr></thead>
+    
+        <tbody class="mt-12 table-striped">
+            <tr>
+                </tr><tr>
+                    <td>
+                        <ul>
+                            <b>Name </b>
+                            <p>Barton Williams</p>
+                            <b>Email</b>
+                            <p>barton.williams2012@gmail.com</p>
+                            <b>Phone No.</b>
+                            <p>000000</p>
+                            <b>Password</b>
+                            <p>Chicago2022!</p>
+                            <b>Calender</b>
+                            <p>Dec. 19, 2022</p>
+                            <b>Gender</b>
+                            <p>Male</p>
+                            <b>Height</b>
+                            <p>00</p>
+                            <b>Unions</b>
+                            <ul>
+                                
+                                <li>UNION</li>
+                                
+                                <li>NONUNION</li>
+                                
+                                <li>Union And Nonunion</li>
+                                
+                                <li>OTHER</li>
+                                
+                            </ul>
+                            <b>Ethnicities</b>
+                            <ul>
+                                
+                                <li>Asian</li>
+                                
+                                <li>Black / African Descent</li>
+                                
+                                <li>Ethnically Ambiguous / Multiracial</li>
+                                
+                                <li>Indigenous Peoples</li>
+                                
+                                <li>Latino / Hispanic</li>
+                                
+                                <li>Middle Eastern</li>
+                                
+                                <li>South Asian / Indian</li>
+                                
+                                <li>Southeast Asian / Pacific Islander</li>
+                                
+                                <li>White / European Descent</li>
+                                
+                            </ul>
+                            <b>Role Types</b>
+                            <ul>
+                                
+                                <li>Lead</li>
+                                
+                                <li>Supporting</li>
+                                
+                                <li>Day Player</li>
+                                
+                                <li>Voiceover</li>
+                                
+                                <li>Background / Extra</li>
+                                
+                                <li>Content Creators &amp; Real People</li>
+                                
+                                <li>Models</li>
+                                
+                                <li>Other</li>
+                                
+                            </ul>
+                            <b>Project Types</b>
+                            <ul>
+                                
+                                <li>Play</li>
+                                
+                                <li>Feature Film</li>
+                                
+                                <li>Short Film</li>
+                                
+                                <li>Scripted Show</li>
+                                
+                                <li>TV Commercial</li>
+                                
+                            </ul>
+                            <b>Pay Status</b>
+                            <p>BOTH</p>
+                            <b>Location</b>
+                            <p>Chicago, IL</p>
+                        </ul>   
+                        <table class="table table-striped table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Type</th>
+                                <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Local Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Out State Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Background Rate</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <ul>
+                            <b>Project Name</b>
+                            <p>Last Culprit</p>
+                            <b>Project Category     |     Role type</b>
+                            <p> Feature Film   |   Day Player </p>
+                            <b>Project Description</b>
+                            <p>Casting "Last Culprit," an original concept that combines Agatha Christie’s Whodunit and Hitchcock’s thriller with compelling backdrop stories. It portrays a young inheritor and a crime novelist with five unconvicted murderers for a money game but turns out to be something unexpected with an even bigger fallout.Production states: "Producer Howard Lum and writer/director Jennifer Hulum team up again for another 'Whodunit' after their successful debut 'Fortune Defies Death,' a whodunit mystery distributed by Lionsgate and etc. in 2019."</p>
+                            <p><b><a class="text-decoration-none" href="https://www.backstage.com/casting/last-culprit-2542378/?role_id=4513236&amp;role_id=4513246&amp;role_id=4513248" target="_blank">View Role</a></b></p>
+                            <b>Role</b>
+                            <p>Jail Guard:</p>
+                            <b>Role Info</b>
+                            <p>Medium build and decent look.</p>
+                            <b>Union Type</b>
+                            <p>Union</p>
+                            <b>Fixed Rate</b>
+                            <p>3945</p>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <p><b>Pending</b></p>
+                            <br>
+                            <b>Matching Date</b>
+                            <p>Dec. 30, 2022, 7:30 p.m.</p>
+                            <br>
+                            <b>Result Reason</b>
+                            <ul>
+                                <li>Negative Keyword</li>
+                                <li>Negative Keyword</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            
+            <tr>
+                <td colspan="3">
+                                <label class="update">Review Status : Not Reviewed</label>
+                                <input type="hidden" name="jobid" value="6">
+                                <button type="submit" class="btn btn-primary justify-content-md-right" id="submit" data-id="6">Submit</button> 
+                            </td>
+                        
+                
+            </tr>
+        </tbody>
+        <tbody><tr>
+            <td colspan="3" class="bg-secondary"></td>
+        </tr>   
+    
+        </tbody><tbody class="mt-12 table-striped">
+            <tr>
+                </tr><tr>
+                    <td>
+                        <ul>
+                            <b>Name </b>
+                            <p>Shar Ghoudsifar</p>
+                            <b>Email</b>
+                            <p>sgcherryz@gmail.com</p>
+                            <b>Phone No.</b>
+                            <p>000000</p>
+                            <b>Password</b>
+                            <p>84AxhThVUzyM</p>
+                            <b>Calender</b>
+                            <p>Dec. 19, 2022</p>
+                            <b>Gender</b>
+                            <p>Male</p>
+                            <b>Height</b>
+                            <p>00</p>
+                            <b>Unions</b>
+                            <ul>
+                                
+                                <li>UNION</li>
+                                
+                                <li>NONUNION</li>
+                                
+                                <li>Union And Nonunion</li>
+                                
+                                <li>OTHER</li>
+                                
+                            </ul>
+                            <b>Ethnicities</b>
+                            <ul>
+                                
+                                <li>Asian</li>
+                                
+                                <li>Black / African Descent</li>
+                                
+                                <li>Ethnically Ambiguous / Multiracial</li>
+                                
+                                <li>Indigenous Peoples</li>
+                                
+                                <li>Latino / Hispanic</li>
+                                
+                                <li>Middle Eastern</li>
+                                
+                                <li>South Asian / Indian</li>
+                                
+                                <li>Southeast Asian / Pacific Islander</li>
+                                
+                                <li>White / European Descent</li>
+                                
+                            </ul>
+                            <b>Role Types</b>
+                            <ul>
+                                
+                                <li>Lead</li>
+                                
+                                <li>Supporting</li>
+                                
+                                <li>Day Player</li>
+                                
+                                <li>Background / Extra</li>
+                                
+                                <li>Models</li>
+                                
+                            </ul>
+                            <b>Project Types</b>
+                            <ul>
+                                
+                                <li>Play</li>
+                                
+                                <li>Feature Film</li>
+                                
+                                <li>Short Film</li>
+                                
+                                <li>Documentary</li>
+                                
+                                <li>Scripted Show</li>
+                                
+                                <li>TV Commercial</li>
+                                
+                                <li>Online Commercial / Video Ad</li>
+                                
+                                <li>Corporate Video</li>
+                                
+                                <li>Social Media Ad</li>
+                                
+                                <li>Multimedia (Other)</li>
+                                
+                            </ul>
+                            <b>Pay Status</b>
+                            <p>BOTH</p>
+                            <b>Location</b>
+                            <p>Los Angeles, CA</p>
+                        </ul>   
+                        <table class="table table-striped table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Type</th>
+                                <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Local Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Out State Rate</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Background Rate</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <ul>
+                            <b>Project Name</b>
+                            <p>Casting Moms for No-Show Sock UGC Social Ad</p>
+                            <b>Project Category     |     Role type</b>
+                            <p> Social Media Ad   |   Content Creators &amp; Real People </p>
+                            <b>Project Description</b>
+                            <p>Seeking moms or women who pass as moms, with strong skills and experience in remote content creation, to film a testimonial and some b-roll in an aesthetic living room setting for a no-show sock company social media ad.</p>
+                            <p><b><a class="text-decoration-none" href="https://www.backstage.com/casting/casting-moms-for-no-show-sock-ugc-social-ad-2562179/?role_id=4541339" target="_blank">View Role</a></b></p>
+                            <b>Role</b>
+                            <p>Mom Content Creator 1:</p>
+                            <b>Role Info</b>
+                            <p>Must be a mom or read as a mom.</p>
+                            <b>Union Type</b>
+                            <p>Nonunion</p>
+                            <b>Fixed Rate</b>
+                            <p>250</p>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <p><b>Pending</b></p>
+                            <br>
+                            <b>Matching Date</b>
+                            <p>Dec. 30, 2022, 7:30 p.m.</p>
+                            <br>
+                            <b>Result Reason</b>
+                            <ul>
+                                <li>Negative Keyword</li>
+                                <li>Negative Keyword</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            
+            <tr>
+                <td colspan="3">
+                                <label class="update">Review Status : Not Reviewed</label>
+                                <input type="hidden" name="jobid" value="11">
+                                <button type="submit" class="btn btn-primary justify-content-md-right" id="submit" data-id="11">Submit</button> 
+                            </td>
+                        
+                
+            </tr>
+        </tbody>
+        <tbody><tr>
+            <td colspan="3" class="bg-secondary"></td>
+        </tr>   
+    
+        </tbody><tbody class="mt-12 table-striped">
+            <tr>
+                </tr><tr>
+                    <td>
+                        <ul>
+                            <b>Name </b>
+                            <p>Ashfaque123</p>
+                            <b>Email</b>
+                            <p>ashfaquemarfani110@gmail.com</p>
+                            <b>Phone No.</b>
+                            <p>03361859890</p>
+                            <b>Password</b>
+                            <p>ash123</p>
+                            <b>Calender</b>
+                            <p>Dec. 29, 2022</p>
+                            <b>Gender</b>
+                            <p>Male</p>
+                            <b>Height</b>
+                            <p>5'11</p>
+                            <b>Unions</b>
+                            <ul>
+                                
+                                <li>UNION</li>
+                                
+                                <li>NONUNION</li>
+                                
+                                <li>Union And Nonunion</li>
+                                
+                                <li>OTHER</li>
+                                
+                            </ul>
+                            <b>Ethnicities</b>
+                            <ul>
+                                
+                                <li>Asian</li>
+                                
+                                <li>Black / African Descent</li>
+                                
+                                <li>Ethnically Ambiguous / Multiracial</li>
+                                
+                                <li>Indigenous Peoples</li>
+                                
+                                <li>Latino / Hispanic</li>
+                                
+                                <li>Middle Eastern</li>
+                                
+                                <li>South Asian / Indian</li>
+                                
+                                <li>Southeast Asian / Pacific Islander</li>
+                                
+                                <li>White / European Descent</li>
+                                
+                            </ul>
+                            <b>Role Types</b>
+                            <ul>
+                                
+                                <li>Lead</li>
+                                
+                                <li>Supporting</li>
+                                
+                                <li>Day Player</li>
+                                
+                                <li>Voiceover</li>
+                                
+                                <li>Background / Extra</li>
+                                
+                                <li>Chorus / Ensemble</li>
+                                
+                                <li>Staff / Crew</li>
+                                
+                                <li>Content Creators &amp; Real People</li>
+                                
+                                <li>Models</li>
+                                
+                                <li>Other</li>
+                                
+                            </ul>
+                            <b>Project Types</b>
+                            <ul>
+                                
+                                <li>Play</li>
+                                
+                                <li>Musical</li>
+                                
+                                <li>Feature Film</li>
+                                
+                                <li>Short Film</li>
+                                
+                                <li>Student Film</li>
+                                
+                                <li>Documentary</li>
+                                
+                                <li>Scripted Show</li>
+                                
+                                <li>Reality Tv</li>
+                                
+                                <li>Documentary Series</li>
+                                
+                                <li>Product Demo / Explainer Video</li>
+                                
+                                <li>TV Commercial</li>
+                                
+                                <li>Spec Commercial</li>
+                                
+                                <li>Unboxing Video</li>
+                                
+                            </ul>
+                            <b>Pay Status</b>
+                            <p>BOTH</p>
+                            <b>Location</b>
+                            <p>Los Angeles, CA</p>
+                        </ul>   
+                        <table class="table table-striped table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Type</th>
+                                <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Local Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Out State Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Background Rate</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <ul>
+                            <b>Project Name</b>
+                            <p>Lux</p>
+                            <b>Project Category     |     Role type</b>
+                            <p> Online Commercial / Video Ad   |   Background / Extra </p>
+                            <b>Project Description</b>
+                            <p>Casting "Lux," a commercial filming in L.A.</p>
+                            <p><b><a class="text-decoration-none" href="https://www.backstage.com/casting/lux-2562266/?role_id=4541441&amp;role_id=4541443&amp;role_id=4541444" target="_blank">View Role</a></b></p>
+                            <b>Role</b>
+                            <p>Background Extra:</p>
+                            <b>Role Info</b>
+                            <p>N/A</p>
+                            <b>Union Type</b>
+                            <p>Nonunion</p>
+                            <b>Fixed Rate</b>
+                            <p>250</p>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <p><b>Pending</b></p>
+                            <br>
+                            <b>Matching Date</b>
+                            <p>Dec. 30, 2022, 7:30 p.m.</p>
+                            <br>
+                            <b>Result Reason</b>
+                            <ul>
+                                <li>Negative Keyword</li>
+                                <li>Negative Keyword</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            
+            <tr>
+                <td colspan="3">
+                                <label class="update">Review Status : Not Reviewed</label>
+                                <input type="hidden" name="jobid" value="1">
+                                <button type="submit" class="btn btn-primary justify-content-md-right" id="submit" data-id="1">Submit</button> 
+                            </td>
+                        
+                
+            </tr>
+        </tbody>
+        <tbody><tr>
+            <td colspan="3" class="bg-secondary"></td>
+        </tr>   
+    
+        </tbody><tbody class="mt-12 table-striped">
+            <tr>
+                </tr><tr>
+                    <td>
+                        <ul>
+                            <b>Name </b>
+                            <p>Barton Williams</p>
+                            <b>Email</b>
+                            <p>barton.williams2012@gmail.com</p>
+                            <b>Phone No.</b>
+                            <p>000000</p>
+                            <b>Password</b>
+                            <p>Chicago2022!</p>
+                            <b>Calender</b>
+                            <p>Dec. 19, 2022</p>
+                            <b>Gender</b>
+                            <p>Male</p>
+                            <b>Height</b>
+                            <p>00</p>
+                            <b>Unions</b>
+                            <ul>
+                                
+                                <li>UNION</li>
+                                
+                                <li>NONUNION</li>
+                                
+                                <li>Union And Nonunion</li>
+                                
+                                <li>OTHER</li>
+                                
+                            </ul>
+                            <b>Ethnicities</b>
+                            <ul>
+                                
+                                <li>Asian</li>
+                                
+                                <li>Black / African Descent</li>
+                                
+                                <li>Ethnically Ambiguous / Multiracial</li>
+                                
+                                <li>Indigenous Peoples</li>
+                                
+                                <li>Latino / Hispanic</li>
+                                
+                                <li>Middle Eastern</li>
+                                
+                                <li>South Asian / Indian</li>
+                                
+                                <li>Southeast Asian / Pacific Islander</li>
+                                
+                                <li>White / European Descent</li>
+                                
+                            </ul>
+                            <b>Role Types</b>
+                            <ul>
+                                
+                                <li>Lead</li>
+                                
+                                <li>Supporting</li>
+                                
+                                <li>Day Player</li>
+                                
+                                <li>Voiceover</li>
+                                
+                                <li>Background / Extra</li>
+                                
+                                <li>Content Creators &amp; Real People</li>
+                                
+                                <li>Models</li>
+                                
+                                <li>Other</li>
+                                
+                            </ul>
+                            <b>Project Types</b>
+                            <ul>
+                                
+                                <li>Play</li>
+                                
+                                <li>Feature Film</li>
+                                
+                                <li>Short Film</li>
+                                
+                                <li>Scripted Show</li>
+                                
+                                <li>TV Commercial</li>
+                                
+                            </ul>
+                            <b>Pay Status</b>
+                            <p>BOTH</p>
+                            <b>Location</b>
+                            <p>Chicago, IL</p>
+                        </ul>   
+                        <table class="table table-striped table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Type</th>
+                                <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Local Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Out State Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Background Rate</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <ul>
+                            <b>Project Name</b>
+                            <p>Almost Real</p>
+                            <b>Project Category     |     Role type</b>
+                            <p> Feature Film   |   Lead </p>
+                            <b>Project Description</b>
+                            <p>Casting "Almost Real," a feature film. Synopsis: A romantic action/comedy about an aspiring restauranteur who meets the girl of his dreams. When he finds out she's a trained killer and on the run from her employer the CIA, he must decide to become her accomplice or lose her forever.</p>
+                            <p><b><a class="text-decoration-none" href="https://www.backstage.com/casting/almost-real-354172/?role_id=1068020&amp;role_id=1068021&amp;role_id=1068022" target="_blank">View Role</a></b></p>
+                            <b>Role</b>
+                            <p>Ruben García Abrego:</p>
+                            <b>Role Info</b>
+                            <p>A ruthless leader of a drug cartel, Ruben García Abrego's bookkeeper steals two million dollars and a ledger that could land him in jail; he pulls out all stops to find her and gets his property back.</p>
+                            <b>Union Type</b>
+                            <p>Nonunion</p>
+                            <b>Fixed Rate</b>
+                            <p>40</p>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <p><b>Pending</b></p>
+                            <br>
+                            <b>Matching Date</b>
+                            <p>Dec. 30, 2022, 7:30 p.m.</p>
+                            <br>
+                            <b>Result Reason</b>
+                            <ul>
+                                <li>Negative Keyword</li>
+                                <li>Negative Keyword</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            
+            <tr>
+                <td colspan="3">
+                                <label class="update">Review Status : Not Reviewed</label>
+                                <input type="hidden" name="jobid" value="30">
+                                <button type="submit" class="btn btn-primary justify-content-md-right" id="submit" data-id="30">Submit</button> 
+                            </td>
+                        
+                
+            </tr>
+        </tbody>
+        <tbody><tr>
+            <td colspan="3" class="bg-secondary"></td>
+        </tr>   
+    
+        </tbody><tbody class="mt-12 table-striped">
+            <tr>
+                </tr><tr>
+                    <td>
+                        <ul>
+                            <b>Name </b>
+                            <p>Ashfaque123</p>
+                            <b>Email</b>
+                            <p>ashfaquemarfani110@gmail.com</p>
+                            <b>Phone No.</b>
+                            <p>03361859890</p>
+                            <b>Password</b>
+                            <p>ash123</p>
+                            <b>Calender</b>
+                            <p>Dec. 29, 2022</p>
+                            <b>Gender</b>
+                            <p>Male</p>
+                            <b>Height</b>
+                            <p>5'11</p>
+                            <b>Unions</b>
+                            <ul>
+                                
+                                <li>UNION</li>
+                                
+                                <li>NONUNION</li>
+                                
+                                <li>Union And Nonunion</li>
+                                
+                                <li>OTHER</li>
+                                
+                            </ul>
+                            <b>Ethnicities</b>
+                            <ul>
+                                
+                                <li>Asian</li>
+                                
+                                <li>Black / African Descent</li>
+                                
+                                <li>Ethnically Ambiguous / Multiracial</li>
+                                
+                                <li>Indigenous Peoples</li>
+                                
+                                <li>Latino / Hispanic</li>
+                                
+                                <li>Middle Eastern</li>
+                                
+                                <li>South Asian / Indian</li>
+                                
+                                <li>Southeast Asian / Pacific Islander</li>
+                                
+                                <li>White / European Descent</li>
+                                
+                            </ul>
+                            <b>Role Types</b>
+                            <ul>
+                                
+                                <li>Lead</li>
+                                
+                                <li>Supporting</li>
+                                
+                                <li>Day Player</li>
+                                
+                                <li>Voiceover</li>
+                                
+                                <li>Background / Extra</li>
+                                
+                                <li>Chorus / Ensemble</li>
+                                
+                                <li>Staff / Crew</li>
+                                
+                                <li>Content Creators &amp; Real People</li>
+                                
+                                <li>Models</li>
+                                
+                                <li>Other</li>
+                                
+                            </ul>
+                            <b>Project Types</b>
+                            <ul>
+                                
+                                <li>Play</li>
+                                
+                                <li>Musical</li>
+                                
+                                <li>Feature Film</li>
+                                
+                                <li>Short Film</li>
+                                
+                                <li>Student Film</li>
+                                
+                                <li>Documentary</li>
+                                
+                                <li>Scripted Show</li>
+                                
+                                <li>Reality Tv</li>
+                                
+                                <li>Documentary Series</li>
+                                
+                                <li>Product Demo / Explainer Video</li>
+                                
+                                <li>TV Commercial</li>
+                                
+                                <li>Spec Commercial</li>
+                                
+                                <li>Unboxing Video</li>
+                                
+                            </ul>
+                            <b>Pay Status</b>
+                            <p>BOTH</p>
+                            <b>Location</b>
+                            <p>Los Angeles, CA</p>
+                        </ul>   
+                        <table class="table table-striped table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                <th>Type</th>
+                                <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Local Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Out State Rate</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Background Rate</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <ul>
+                            <b>Project Name</b>
+                            <p>Casting Moms for No-Show Sock UGC Social Ad</p>
+                            <b>Project Category     |     Role type</b>
+                            <p> Social Media Ad   |   Content Creators &amp; Real People </p>
+                            <b>Project Description</b>
+                            <p>Seeking moms or women who pass as moms, with strong skills and experience in remote content creation, to film a testimonial and some b-roll in an aesthetic living room setting for a no-show sock company social media ad.</p>
+                            <p><b><a class="text-decoration-none" href="https://www.backstage.com/casting/casting-moms-for-no-show-sock-ugc-social-ad-2562179/?role_id=4541339" target="_blank">View Role</a></b></p>
+                            <b>Role</b>
+                            <p>Mom Content Creator 1:</p>
+                            <b>Role Info</b>
+                            <p>Must be a mom or read as a mom.</p>
+                            <b>Union Type</b>
+                            <p>Nonunion</p>
+                            <b>Fixed Rate</b>
+                            <p>250</p>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <p><b>Pending</b></p>
+                            <br>
+                            <b>Matching Date</b>
+                            <p>Dec. 30, 2022, 7:30 p.m.</p>
+                            <br>
+                            <b>Result Reason</b>
+                            <ul>
+                                <li>Negative Keyword</li>
+                                <li>Negative Keyword</li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            
+            <tr>
+                <td colspan="3">
+                                <label class="update">Review Status : Not Reviewed</label>
+                                <input type="hidden" name="jobid" value="10">
+                                <button type="submit" class="btn btn-primary justify-content-md-right" id="submit" data-id="10">Submit</button> 
+                            </td>
+                        
+                
+            </tr>
+        </tbody>
+        <tbody><tr>
+            <td colspan="3" class="bg-secondary"></td>
+        </tr>   
+    
+</tbody><tfoot class="tfoot">
+    <tr>
+        <td colspan="3">
+            
+            <ul class="pagination">
+              
+                <li class="disabled sr-only page-link"><span>«</span></li>
+              
+              
+                
+                  <li class="active"><span class="page-link">1</span></li>
+                
+              
+                
+                  <li class="page-item"><a class="page-link" href="http://localhost:8000/review/?page=2">2</a></li>
+                
+              
+                
+                  <li class="page-item"><a class="page-link" href="http://localhost:8000/review/?page=3">3</a></li>
+                
+              
+                
+                  <li class="page-item"><a class="page-link" href="http://localhost:8000/review/?page=4">4</a></li>
+                
+              
+                
+                  <li class="page-item"><a class="page-link" href="http://localhost:8000/review/?page=5">5</a></li>
+                
+              
+                
+                  <li class="page-item"><a class="page-link" href="http://localhost:8000/review/?page=6">6</a></li>
+                
+              
+              
+                <li class="page-item"><a class="page-link" href="http://localhost:8000/review/?page=2">»</a></li>
+              
+            </ul>
+            
+        </td>   
+    </tr>
+</tfoot>
+  </table>
+</div>
+<script>
+var elements = document.querySelectorAll('.myformsubmit');
+for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    element.addEventListener('submit', (function(elem){
+        return function(event) {
+            event.preventDefault();
+            var button_id = elem.id;
+            $.ajax({
+            type: 'POST',
+            url: "/review/",
+            data: {
+                'jobid': button_id,
+                'csrfmiddlewaretoken': '7Apd3mAqFR5E8ZbjK0ew8IrboC2SwgfjzsfuOw0ql2FBTfXlPQnRWdqgImGfB7Yx'
+            },
+            success: function(data) {
+                console.log()
+            }
+            });
+        }
+    })(element));
+}
+</script>
+
+        </div>
+    <script src="./Welcome To Uncut_files/bootstrap.js.download"></script>
+    <script src="./Welcome To Uncut_files/multiselect-dropdown.js.download"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script> -->
+    
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

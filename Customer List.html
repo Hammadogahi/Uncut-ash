@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:8000/profiles/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome To Uncut</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Customer List_files/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./Customer List_files/jquery.min.js.download"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /> -->
+    <style>
+      select {
+        width: 20em;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-transparent main-body"
+    data-new-gr-c-s-check-loaded="14.1093.0"
+    data-gr-ext-installed=""
+  >
+    <div>
+      <nav class="navbar navbar-expand-lg border bg-white">
+        <div class="container-fluid" style="width: 70%">
+          <a class="navbar-brand" href="http://localhost:8000/">Uncut</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/add"
+                  >Add Customer</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/global"
+                  >Global Keywords</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/profiles"
+                  >Customers List</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/review"
+                  >Review System</a
+                >
+              </li>
+            </ul>
+
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <p>Hello, Ash</p>
+                </li>
+                <li>
+                    <a class="nav-link" href="/logout/">Logout</a>
+                </li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item h5 text-center" style="margin-top: auto">
+                Ash
+              </li>
+              &nbsp; &nbsp; &nbsp;
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/logout/"
+                  >Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <!-- &lt;QuerySet [&lt;Profile: Ashfaque123&gt;, &lt;Profile: Shar Ghoudsifar&gt;, &lt;Profile: Barton Williams&gt;]&gt; -->
+      <div class="container main-container">
+        <h4 class="brand">Customer List</h4>
+        <div class="table-container" style="overflow: auto">
+          <table class="table table-striped table-hover">
+            <tbody>
+              <tr>
+                <th>Customer ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Uncut ID</th>
+                <th>User_Status</th>
+                <th>View</th>
+              </tr>
+
+              <tr>
+                <td>42</td>
+                <td>Ashfaque123</td>
+                <td>ashfaquemarfani110@gmail.com</td>
+                <td>100000</td>
+                <td>Read Mode</td>
+                <td><a href="http://localhost:8000/profiles/42/">View</a></td>
+              </tr>
+
+              <tr>
+                <td>18</td>
+                <td>Shar Ghoudsifar</td>
+                <td>sgcherryz@gmail.com</td>
+                <td>1900957271</td>
+                <td>READ_MODE</td>
+                <td><a href="http://localhost:8000/profiles/18/">View</a></td>
+              </tr>
+
+              <tr>
+                <td>19</td>
+                <td>Barton Williams</td>
+                <td>barton.williams2012@gmail.com</td>
+                <td>1996932307</td>
+                <td>READ_MODE</td>
+                <td><a href="http://localhost:8000/profiles/19/">View</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+      </div>
+    </div>
+    <script src="./Customer List_files/bootstrap.js.download"></script>
+    <script src="./Customer List_files/multiselect-dropdown.js.download"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script> -->
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>

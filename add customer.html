@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:8000/add/ -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome To Uncut</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./add customer_files/bootstrap.css"
+    />
+    <script src="./add customer_files/jquery.min.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /> -->
+    <style>
+      select {
+        width: 20em;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-transparent main-body"
+    data-new-gr-c-s-check-loaded="14.1093.0"
+    data-gr-ext-installed=""
+  >
+    <div>
+      <nav class="navbar navbar-expand-lg border bg-white">
+        <div class="container-fluid" style="width: 70%">
+          <a class="navbar-brand" href="http://localhost:8000/">Uncut</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/add"
+                  >Add Customer</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/global"
+                  >Global Keywords</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/profiles"
+                  >Customers List</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/review"
+                  >Review System</a
+                >
+              </li>
+            </ul>
+
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <p>Hello, Ash</p>
+                </li>
+                <li>
+                    <a class="nav-link" href="/logout/">Logout</a>
+                </li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item h5 text-center" style="margin-top: auto">
+                Ash
+              </li>
+              &nbsp; &nbsp; &nbsp;
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/logout/"
+                  >Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main-form-wrapper">
+      <!-- container form-control -->
+      <div
+        class="container mx-auto form-container"
+        style="width: 50%; margin-top: 30px"
+      >
+        <h1 class="h1 text-center form-heading">Add New Customer</h1>
+        <!-- new customer form form-->
+        <form
+          action="http://localhost:8000/add/"
+          method="POST"
+          class="bg-white mx-auto"
+        >
+          <div id="div_id_UserFullName" class="form-group form-floating">
+            <input
+              type="text"
+              name="UserFullName"
+              maxlength="256"
+              class="form-control"
+              required=""
+              id="id_UserFullName"
+              placeholder="User Full Name"
+            />
+            <label for="id_UserFullName" class="requiredField">
+              UserFullName<span class="asteriskField">*</span>
+            </label>
+          </div>
+
+          <div id="div_id_Email" class="form-group form-floating">
+            <input
+              type="email"
+              name="Email"
+              maxlength="254"
+              class="emailinput form-control"
+              required
+              id="id_Email"
+              placeholder="Email"
+            />
+            <label for="id_Email" class="requiredField">
+              Email<span class="asteriskField">*</span>
+            </label>
+          </div>
+          <div id="div_id_Password" class="form-group form-floating">
+            <input
+              type="password"
+              name="Password"
+              maxlength="100"
+              class="textinput textInput form-control"
+              required=""
+              id="id_Password"
+              placeholder="Password"
+            />
+            <label for="id_Password" class="requiredField">
+              Password<span class="asteriskField">*</span>
+            </label>
+          </div>
+          <div id="div_id_Uncut_ID" class="form-group form-floating">
+            <input
+              type="number"
+              name="Uncut_ID"
+              class="numberinput form-control"
+              required=""
+              id="id_Uncut_ID"
+              placeholder="Uncut ID"
+            />
+            <label for="id_Uncut_ID" class="requiredField">
+              Uncut ID<span class="asteriskField">*</span>
+            </label>
+          </div>
+          <div id="div_id_Bio" class="form-group form-floating">
+            <textarea
+              name="Bio"
+              cols="40"
+              rows="10"
+              maxlength="500"
+              class="textarea form-control"
+              required=""
+              id="id_Bio"
+              placeholder="Bio"
+              style="height: auto !important"
+            ></textarea>
+            <label for="id_Bio" class="requiredField">
+              Bio<span class="asteriskField">*</span>
+            </label>
+          </div>
+          <div id="div_id_User_Status" class="form-group form-floating">
+            <select
+              name="User_Status"
+              class="select custom-select form-select"
+              id="id_User_Status"
+            >
+              <option value="Read Mode">Read Mode</option>
+              <option value="Active">Active</option>
+            </select>
+            <label for="id_User_Status" class="requiredField">
+              User Status<span class="asteriskField">*</span>
+            </label>
+          </div>
+          <div id="div_id_Calender" class="form-group form-floating">
+            <input
+              type="text"
+              name="Calendar"
+              class="dateinput form-control"
+              required=""
+              id="id_Calender"
+              placeholder="Calendar"
+            />
+            <label for="id_Calender" class="requiredField">
+              Calender<span class="asteriskField">*</span>
+            </label>
+          </div>
+          <div id="div_id_Calender_Status" class="form-group form-floating">
+            <select
+              name="Calender_Status"
+              class="select custom-select form-select"
+              id="id_Calender_Status"
+            >
+              <option value="In Active">In Active</option>
+              <option value="Active">Active</option>
+            </select>
+            <label for="id_Calender_Status" class="requiredField">
+              Calender Status<span class="asteriskField">*</span>
+            </label>
+          </div>
+
+          <input
+            type="hidden"
+            name="csrfmiddlewaretoken"
+            value="ToQmUkE2w5z3WUYMm7eol86LMbhDQa5AlgGDFu42cg90HaKOrXnJ9D5Q6VV0V1OO"
+          />
+
+          <input
+            type="hidden"
+            name="csrfmiddlewaretoken"
+            value="ToQmUkE2w5z3WUYMm7eol86LMbhDQa5AlgGDFu42cg90HaKOrXnJ9D5Q6VV0V1OO"
+          />
+          <input
+            type="submit"
+            class="btn btn-primary p-2.5 px-5 btn-gradient-sm"
+            value="Save"
+          />
+        </form>
+
+        <!-- new customer form end-->
+      </div>
+    </div>
+    <script src="./add customer_files/bootstrap.js.download"></script>
+    <script src="./add customer_files/multiselect-dropdown.js.download"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script> -->
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
