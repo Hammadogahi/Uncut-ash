@@ -60,6 +60,18 @@ th, td {
     background-color: #e3e3e3;
 }
 
+.profile-config_table-container table input, .profile-config_table-container table select  {
+ max-width: 60% !important;
+}
+
+.select2-container {
+    max-width: 60%;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
 
 /* Button */
 

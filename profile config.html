@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <!-- saved from url=(0034)http://localhost:8000/profiles/42/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Welcome To Uncut</title>
-        <link rel="stylesheet" type="text/css" href="./profile config_files/bootstrap.css">
- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-       
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /> -->
-        <style>
-            select {width: 20em;}
-        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome To Uncut</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./profile config_files/bootstrap.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /> -->
   </head>
-    <body class="bg-transparent" data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed="">
-        <div>
-    <nav class="navbar navbar-expand-lg border bg-white">
-        <div class="container-fluid" style="width: 70%;">
-        <a class="navbar-brand" href="http://localhost:8000/">Uncut</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <body
+    class="bg-transparent main-body"
+    data-new-gr-c-s-check-loaded="14.1093.0"
+    data-gr-ext-installed=""
+  >
+    <div>
+      <nav class="navbar navbar-expand-lg border bg-white">
+        <div class="container-fluid" style="width: 70%">
+          <a class="navbar-brand" href="http://localhost:8000/">Uncut</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8000/add">Add Customer</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8000/global">Global Keywords</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8000/profiles">Customers List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8000/review">Review System</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/add"
+                  >Add Customer</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/global"
+                  >Global Keywords</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/profiles"
+                  >Customers List</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/review"
+                  >Review System</a
+                >
+              </li>
             </ul>
 
             <!-- <ul class="nav navbar-nav navbar-right">
@@ -48,317 +75,572 @@
                 </li>
             </ul> -->
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item h5 text-center" style="margin-top: auto;">Ash</li> &nbsp; &nbsp; &nbsp;
-                <li class="nav-item"><a class="nav-link" href="http://localhost:8000/logout/">Log out</a></li>
+              <li class="nav-item h5 text-center" style="margin-top: auto">
+                Ash
+              </li>
+              &nbsp; &nbsp; &nbsp;
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8000/logout/"
+                  >Log out</a
+                >
+              </li>
             </ul>
+          </div>
         </div>
-        </div>
-    </nav>
-</div>
-        <div>
-            
-<div class="container ">
-    <h1 class="brand text-center"> Profile Config</h1>
-    <table class="table border-2 table-striped table-bordered table-responsive">
-        <form action="http://localhost:8000/profiles/42/" method="POST"></form>
-            <input type="hidden" name="csrfmiddlewaretoken" value="QvnT42qVxu74GWxfVRgT5B3VdbrKVcheindaPcQVdFH1rcjh0HpeT620xV57030s">
-            <tbody><tr>
-                <td class="col-md-3"> <b>Customer ID</b></td>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div class="container profile-config_table-container">
+        <h1 class="brand text-center">Profile Config</h1>
+        <div class="table-container" style="overflow: auto">
+          <table
+            class="table border-2 table-striped table-bordered table-responsive"
+          >
+            <form
+              action="http://localhost:8000/profiles/42/"
+              method="POST"
+            ></form>
+
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="QvnT42qVxu74GWxfVRgT5B3VdbrKVcheindaPcQVdFH1rcjh0HpeT620xV57030s"
+            />
+            <tbody>
+              <tr>
+                <td class="col-md-3"><b>Customer ID</b></td>
                 <td class="non-editable">Ashfaque123</td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Gender</b></td>
-                <td><select name="gender" id="id_gender">
-  <option value="Male" selected="">Male</option>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Gender</b></td>
+                <td>
+                  <select name="gender" id="id_gender" class="form-select">
+                    <option value="Male" selected="">Male</option>
 
-  <option value="Female">Female</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Phone No</b></td>
+                <td>
+                  <div id="div_id_Phone" class="form-group form-floating">
+                    <input
+                      type="text"
+                      name="Phone"
+                      value="03361859890"
+                      maxlength="20"
+                      class="form-control"
+                      required
+                      id="id_Phone"
+                      placeholder="Phone No."
+                    />
+                    <label for="id_Phone" class="requiredField">
+                      Phone No. <span class="asteriskField">*</span></label
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Height</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      name="Height"
+                      class="form-control"
+                      value="5&#39;11"
+                      maxlength="10"
+                      required
+                      id="id_Height"
+                      placeholder="Height"
+                    />
+                    <label for="id_Height" class="requiredField">
+                      Height
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Min Age</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      name="MinAge"
+                      class="form-control"
+                      value="10"
+                      required=""
+                      id="id_MinAge"
+                      placeholder="Min Age"
+                    />
+                    <label for="id_MinAge">Min Age</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Max Age</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      name="MaxAge"
+                      class="form-control"
+                      value="100"
+                      required=""
+                      id="id_MaxAge"
+                      placeholder="Max Age"
+                    />
+                    <label for="id_MaxAge">Max Age</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Unions</b></td>
+                <td>
+                  <select
+                    name="field2"
+                    id="field2"
+                    class="selectpicker form-select"
+                    name="states[]"
+                    multiple="multiple"
+                    style="max-width: 700px"
+                  >
+                    <option value="UNION" selected="">UNION</option>
 
-</select></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Phone No</b></td>
-                <td><input type="text" name="Phone" value="03361859890" maxlength="20" required="" id="id_Phone"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Height</b></td>
-                <td><input type="text" name="Height" value="5&#39;11" maxlength="10" required="" id="id_Height"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Min Age</b></td>
-                <td><input type="number" name="MinAge" value="10" required="" id="id_MinAge"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Max Age</b></td>
-                <td><input type="number" name="MaxAge" value="100" required="" id="id_MaxAge"></td>
-            </tr>
-            <tr>
-                <td> <b>Unions</b></td>
-                <td>
-                    <select name="field2" id="field2" class="selectpicker" name="states[]" multiple="multiple">
-                        
-                        <option value="UNION" selected="">UNION</option>
-                        
-                        <option value="NONUNION" selected="">NONUNION</option>
-                        
-                        <option value="Union And Nonunion" selected="">Union And Nonunion</option>
-                        
-                        <option value="OTHER" selected="">OTHER</option>
-                        
-                    </select>
-                    <div class="multiselect-dropdown" style="width: 301px;"><div class="multiselect-dropdown-list-wrapper"><input class="multiselect-dropdown-search form-control" placeholder="search" style="width: 100%; display: none;"><div class="multiselect-dropdown-list" style="height: 15rem;"><div class="multiselect-dropdown-all-selector"><input type="checkbox"><label>All</label></div><div class="checked"><input type="checkbox"><label>UNION</label></div><div class="checked"><input type="checkbox"><label>NONUNION</label></div><div class="checked"><input type="checkbox"><label>Union And Nonunion</label></div><div class="checked"><input type="checkbox"><label>OTHER</label></div></div></div><span class="optext">UNION<span class="optdel" title="Remove">🗙</span></span><span class="optext">NONUNION<span class="optdel" title="Remove">🗙</span></span><span class="optext">Union And Nonunion<span class="optdel" title="Remove">🗙</span></span><span class="optext">OTHER<span class="optdel" title="Remove">🗙</span></span></div>
+                    <option value="NONUNION" selected="">NONUNION</option>
+
+                    <option value="Union And Nonunion" selected="">
+                      Union And Nonunion
+                    </option>
+
+                    <option value="OTHER" selected="">OTHER</option>
+                  </select>
                 </td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Ethnicities</b></td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Ethnicities</b></td>
                 <td>
-                    <select name="Ethnicities" multiple="" multiselect-select-all="true" onchange="console.log(this.selectedOptions)" style="display: none;">
-                        
-                        <option value="Asian" selected="">Asian</option>
-                        
-                        <option value="Black / African Descent" selected="">Black / African Descent</option>
-                        
-                        <option value="Ethnically Ambiguous / Multiracial" selected="">Ethnically Ambiguous / Multiracial</option>
-                        
-                        <option value="Indigenous Peoples" selected="">Indigenous Peoples</option>
-                        
-                        <option value="Latino / Hispanic" selected="">Latino / Hispanic</option>
-                        
-                        <option value="Middle Eastern" selected="">Middle Eastern</option>
-                        
-                        <option value="South Asian / Indian" selected="">South Asian / Indian</option>
-                        
-                        <option value="Southeast Asian / Pacific Islander" selected="">Southeast Asian / Pacific Islander</option>
-                        
-                        <option value="White / European Descent" selected="">White / European Descent</option>
-                        
-                    </select><div class="multiselect-dropdown" style="width: 301px;"><div class="multiselect-dropdown-list-wrapper"><input class="multiselect-dropdown-search form-control" placeholder="search" style="width: 100%; display: none;"><div class="multiselect-dropdown-list" style="height: 15rem;"><div class="multiselect-dropdown-all-selector"><input type="checkbox"><label>All</label></div><div class="checked"><input type="checkbox"><label>Asian</label></div><div class="checked"><input type="checkbox"><label>Black / African Descent</label></div><div class="checked"><input type="checkbox"><label>Ethnically Ambiguous / Multiracial</label></div><div class="checked"><input type="checkbox"><label>Indigenous Peoples</label></div><div class="checked"><input type="checkbox"><label>Latino / Hispanic</label></div><div class="checked"><input type="checkbox"><label>Middle Eastern</label></div><div class="checked"><input type="checkbox"><label>South Asian / Indian</label></div><div class="checked"><input type="checkbox"><label>Southeast Asian / Pacific Islander</label></div><div class="checked"><input type="checkbox"><label>White / European Descent</label></div></div></div><span class="optext maxselected">9 selected</span></div>
+                  <select
+                    name="Ethnicities"
+                    multiple=""
+                    multiselect-select-all="true"
+                    class="selectpicker form-select"
+                  >
+                    <option value="Asian" selected="">Asian</option>
+
+                    <option value="Black / African Descent" selected="">
+                      Black / African Descent
+                    </option>
+
+                    <option
+                      value="Ethnically Ambiguous / Multiracial"
+                      selected=""
+                    >
+                      Ethnically Ambiguous / Multiracial
+                    </option>
+
+                    <option value="Indigenous Peoples" selected="">
+                      Indigenous Peoples
+                    </option>
+
+                    <option value="Latino / Hispanic" selected="">
+                      Latino / Hispanic
+                    </option>
+
+                    <option value="Middle Eastern" selected="">
+                      Middle Eastern
+                    </option>
+
+                    <option value="South Asian / Indian" selected="">
+                      South Asian / Indian
+                    </option>
+
+                    <option
+                      value="Southeast Asian / Pacific Islander"
+                      selected=""
+                    >
+                      Southeast Asian / Pacific Islander
+                    </option>
+
+                    <option value="White / European Descent" selected="">
+                      White / European Descent
+                    </option>
+                  </select>
                 </td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Role_Types</b></td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Role_Types</b></td>
                 <td>
-                    <select name="Role_Types" multiple="" multiselect-select-all="true" onchange="console.log(this.selectedOptions)" style="display: none;">
-                        
-                        <option value="Lead" selected="">Lead</option>"
-                        
-                        <option value="Supporting" selected="">Supporting</option>"
-                        
-                        <option value="Day Player" selected="">Day Player</option>"
-                        
-                        <option value="Voiceover" selected="">Voiceover</option>"
-                        
-                        <option value="Background / Extra" selected="">Background / Extra</option>"
-                        
-                        <option value="Chorus / Ensemble" selected="">Chorus / Ensemble</option>"
-                        
-                        <option value="Staff / Crew" selected="">Staff / Crew</option>"
-                        
-                        <option value="Content Creators &amp; Real People" selected="">Content Creators &amp; Real People</option>"
-                        
-                        <option value="Models" selected="">Models</option>"
-                        
-                        <option value="Other" selected="">Other</option>"
-                        
-                    </select><div class="multiselect-dropdown" style="width: 301px;"><div class="multiselect-dropdown-list-wrapper"><input class="multiselect-dropdown-search form-control" placeholder="search" style="width: 100%; display: none;"><div class="multiselect-dropdown-list" style="height: 15rem;"><div class="multiselect-dropdown-all-selector"><input type="checkbox"><label>All</label></div><div class="checked"><input type="checkbox"><label>Lead</label></div><div class="checked"><input type="checkbox"><label>Supporting</label></div><div class="checked"><input type="checkbox"><label>Day Player</label></div><div class="checked"><input type="checkbox"><label>Voiceover</label></div><div class="checked"><input type="checkbox"><label>Background / Extra</label></div><div class="checked"><input type="checkbox"><label>Chorus / Ensemble</label></div><div class="checked"><input type="checkbox"><label>Staff / Crew</label></div><div class="checked"><input type="checkbox"><label>Content Creators &amp; Real People</label></div><div class="checked"><input type="checkbox"><label>Models</label></div><div class="checked"><input type="checkbox"><label>Other</label></div></div></div><span class="optext maxselected">10 selected</span></div>
+                  <select
+                    name="Role_Types"
+                    multiple=""
+                    multiselect-select-all="true"
+                    onchange="console.log(this.selectedOptions)"
+                    class="selectpicker form-select"
+                  >
+                    <option value="Lead" selected="">Lead</option>
+                    "
+
+                    <option value="Supporting" selected="">Supporting</option>
+                    "
+
+                    <option value="Day Player" selected="">Day Player</option>
+                    "
+
+                    <option value="Voiceover" selected="">Voiceover</option>
+                    "
+
+                    <option value="Background / Extra" selected="">
+                      Background / Extra
+                    </option>
+                    "
+
+                    <option value="Chorus / Ensemble" selected="">
+                      Chorus / Ensemble
+                    </option>
+                    "
+
+                    <option value="Staff / Crew" selected="">
+                      Staff / Crew
+                    </option>
+                    "
+
+                    <option
+                      value="Content Creators &amp; Real People"
+                      selected=""
+                    >
+                      Content Creators &amp; Real People
+                    </option>
+                    "
+
+                    <option value="Models" selected="">Models</option>
+                    "
+
+                    <option value="Other" selected="">Other</option>
+                    "
+                  </select>
                 </td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Project_Types</b></td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Project_Types</b></td>
                 <td>
-                    <select name="Project_Types" multiple="" multiselect-select-all="true" onchange="console.log(this.selectedOptions)" style="display: none;">
-                        
-                            <option value="Play" selected="">Play</option>
-                        
-                            <option value="Musical" selected="">Musical</option>
-                        
-                            <option value="Feature Film" selected="">Feature Film</option>
-                        
-                            <option value="Short Film" selected="">Short Film</option>
-                        
-                            <option value="Student Film" selected="">Student Film</option>
-                        
-                            <option value="Documentary" selected="">Documentary</option>
-                        
-                            <option value="Scripted Show" selected="">Scripted Show</option>
-                        
-                            <option value="Reality Tv" selected="">Reality Tv</option>
-                        
-                            <option value="Documentary Series" selected="">Documentary Series</option>
-                        
-                            <option value="Product Demo / Explainer Video" selected="">Product Demo / Explainer Video</option>
-                        
-                            <option value="TV Commercial" selected="">TV Commercial</option>
-                        
-                            <option value="Spec Commercial" selected="">Spec Commercial</option>
-                        
-                            <option value="Online Commercial / Video Ad">Online Commercial / Video Ad</option>
-                        
-                            <option value="Photography / Stills">Photography / Stills</option>
-                        
-                            <option value="Audio Ad">Audio Ad</option>
-                        
-                            <option value="Corporate Video">Corporate Video</option>
-                        
-                            <option value="Social Media Ad">Social Media Ad</option>
-                        
-                            <option value="Review / Testimonial">Review / Testimonial</option>
-                        
-                            <option value="Unboxing Video" selected="">Unboxing Video</option>
-                        
-                            <option value="How-to Video">How-to Video</option>
-                        
-                            <option value="Other UGC">Other UGC</option>
-                        
-                            <option value="Music Video">Music Video</option>
-                        
-                            <option value="Animation">Animation</option>
-                        
-                            <option value="Video Game">Video Game</option>
-                        
-                            <option value="Audiobook">Audiobook</option>
-                        
-                            <option value="Podcast">Podcast</option>
-                        
-                            <option value="E-Learning Content">E-Learning Content</option>
-                        
-                            <option value="Multimedia (Other)">Multimedia (Other)</option>
-                        
-                            <option value="Stock Library">Stock Library</option>
-                        
-                            <option value="General Staff + Crew">General Staff + Crew</option>
-                        
-                            <option value="Gigs">Gigs</option>
-                        
-                            <option value="General Voiceover">General Voiceover</option>
-                        
-                            <option value="General Modeling">General Modeling</option>
-                        
-                            <option value="Live Performing Arts">Live Performing Arts</option>
-                        
-                            <option value="Events + Promo Work">Events + Promo Work</option>
-                        
-                            <option value="Workshops + Classes">Workshops + Classes</option>
-                        
-                            <option value="Groups + Membership Companies">Groups + Membership Companies</option>
-                        
-                            <option value="Agents + Managers">Agents + Managers</option>
-                        
-                            <option value="Comedy Show">Comedy Show</option>
-                        
-                            <option value="Competitions">Competitions</option>
-                        
-                            <option value="General Musician Gigs">General Musician Gigs</option>
-                        
-                            <option value="General Dance Gigs">General Dance Gigs</option>
-                        
-                            <option value="General Singing Gigs">General Singing Gigs</option>
-                        
-                    </select><div class="multiselect-dropdown" style="width: 301px;"><div class="multiselect-dropdown-list-wrapper"><input class="multiselect-dropdown-search form-control" placeholder="search" style="width: 100%; display: none;"><div class="multiselect-dropdown-list" style="height: 15rem;"><div class="multiselect-dropdown-all-selector"><input type="checkbox"><label>All</label></div><div class="checked"><input type="checkbox"><label>Play</label></div><div class="checked"><input type="checkbox"><label>Musical</label></div><div class="checked"><input type="checkbox"><label>Feature Film</label></div><div class="checked"><input type="checkbox"><label>Short Film</label></div><div class="checked"><input type="checkbox"><label>Student Film</label></div><div class="checked"><input type="checkbox"><label>Documentary</label></div><div class="checked"><input type="checkbox"><label>Scripted Show</label></div><div class="checked"><input type="checkbox"><label>Reality Tv</label></div><div class="checked"><input type="checkbox"><label>Documentary Series</label></div><div class="checked"><input type="checkbox"><label>Product Demo / Explainer Video</label></div><div class="checked"><input type="checkbox"><label>TV Commercial</label></div><div class="checked"><input type="checkbox"><label>Spec Commercial</label></div><div><input type="checkbox"><label>Online Commercial / Video Ad</label></div><div><input type="checkbox"><label>Photography / Stills</label></div><div><input type="checkbox"><label>Audio Ad</label></div><div><input type="checkbox"><label>Corporate Video</label></div><div><input type="checkbox"><label>Social Media Ad</label></div><div><input type="checkbox"><label>Review / Testimonial</label></div><div class="checked"><input type="checkbox"><label>Unboxing Video</label></div><div><input type="checkbox"><label>How-to Video</label></div><div><input type="checkbox"><label>Other UGC</label></div><div><input type="checkbox"><label>Music Video</label></div><div><input type="checkbox"><label>Animation</label></div><div><input type="checkbox"><label>Video Game</label></div><div><input type="checkbox"><label>Audiobook</label></div><div><input type="checkbox"><label>Podcast</label></div><div><input type="checkbox"><label>E-Learning Content</label></div><div><input type="checkbox"><label>Multimedia (Other)</label></div><div><input type="checkbox"><label>Stock Library</label></div><div><input type="checkbox"><label>General Staff + Crew</label></div><div><input type="checkbox"><label>Gigs</label></div><div><input type="checkbox"><label>General Voiceover</label></div><div><input type="checkbox"><label>General Modeling</label></div><div><input type="checkbox"><label>Live Performing Arts</label></div><div><input type="checkbox"><label>Events + Promo Work</label></div><div><input type="checkbox"><label>Workshops + Classes</label></div><div><input type="checkbox"><label>Groups + Membership Companies</label></div><div><input type="checkbox"><label>Agents + Managers</label></div><div><input type="checkbox"><label>Comedy Show</label></div><div><input type="checkbox"><label>Competitions</label></div><div><input type="checkbox"><label>General Musician Gigs</label></div><div><input type="checkbox"><label>General Dance Gigs</label></div><div><input type="checkbox"><label>General Singing Gigs</label></div></div></div><span class="optext maxselected">13 selected</span></div>
+                  <select
+                    name="Project_Types"
+                    multiple=""
+                    multiselect-select-all="true"
+                    class="selectpicker form-select"
+                  >
+                    <option value="Play" selected="">Play</option>
+
+                    <option value="Musical" selected="">Musical</option>
+
+                    <option value="Feature Film" selected="">
+                      Feature Film
+                    </option>
+
+                    <option value="Short Film" selected="">Short Film</option>
+
+                    <option value="Student Film" selected="">
+                      Student Film
+                    </option>
+
+                    <option value="Documentary" selected="">Documentary</option>
+
+                    <option value="Scripted Show" selected="">
+                      Scripted Show
+                    </option>
+
+                    <option value="Reality Tv" selected="">Reality Tv</option>
+
+                    <option value="Documentary Series" selected="">
+                      Documentary Series
+                    </option>
+
+                    <option value="Product Demo / Explainer Video" selected="">
+                      Product Demo / Explainer Video
+                    </option>
+
+                    <option value="TV Commercial" selected="">
+                      TV Commercial
+                    </option>
+
+                    <option value="Spec Commercial" selected="">
+                      Spec Commercial
+                    </option>
+
+                    <option value="Online Commercial / Video Ad">
+                      Online Commercial / Video Ad
+                    </option>
+
+                    <option value="Photography / Stills">
+                      Photography / Stills
+                    </option>
+
+                    <option value="Audio Ad">Audio Ad</option>
+
+                    <option value="Corporate Video">Corporate Video</option>
+
+                    <option value="Social Media Ad">Social Media Ad</option>
+
+                    <option value="Review / Testimonial">
+                      Review / Testimonial
+                    </option>
+
+                    <option value="Unboxing Video" selected="">
+                      Unboxing Video
+                    </option>
+
+                    <option value="How-to Video">How-to Video</option>
+
+                    <option value="Other UGC">Other UGC</option>
+
+                    <option value="Music Video">Music Video</option>
+
+                    <option value="Animation">Animation</option>
+
+                    <option value="Video Game">Video Game</option>
+
+                    <option value="Audiobook">Audiobook</option>
+
+                    <option value="Podcast">Podcast</option>
+
+                    <option value="E-Learning Content">
+                      E-Learning Content
+                    </option>
+
+                    <option value="Multimedia (Other)">
+                      Multimedia (Other)
+                    </option>
+
+                    <option value="Stock Library">Stock Library</option>
+
+                    <option value="General Staff + Crew">
+                      General Staff + Crew
+                    </option>
+
+                    <option value="Gigs">Gigs</option>
+
+                    <option value="General Voiceover">General Voiceover</option>
+
+                    <option value="General Modeling">General Modeling</option>
+
+                    <option value="Live Performing Arts">
+                      Live Performing Arts
+                    </option>
+
+                    <option value="Events + Promo Work">
+                      Events + Promo Work
+                    </option>
+
+                    <option value="Workshops + Classes">
+                      Workshops + Classes
+                    </option>
+
+                    <option value="Groups + Membership Companies">
+                      Groups + Membership Companies
+                    </option>
+
+                    <option value="Agents + Managers">Agents + Managers</option>
+
+                    <option value="Comedy Show">Comedy Show</option>
+
+                    <option value="Competitions">Competitions</option>
+
+                    <option value="General Musician Gigs">
+                      General Musician Gigs
+                    </option>
+
+                    <option value="General Dance Gigs">
+                      General Dance Gigs
+                    </option>
+
+                    <option value="General Singing Gigs">
+                      General Singing Gigs
+                    </option>
+                  </select>
                 </td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Local Rate</b></td>
-                <td><input type="number" name="Local_rate" value="1" required="" id="id_Local_rate"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Out State Rate</b></td>
-                <td><input type="number" name="out_state_rate" value="1" required="" id="id_out_state_rate"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Background Rate</b></td>
-                <td><input type="number" name="background_rate" value="1" required="" id="id_background_rate"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Location</b></td>
-                <td><input type="text" name="Location" value="Los Angeles, CA" maxlength="100" required="" id="id_Location"></td>
-            </tr>
-            <tr>
-                <td class="col-md-3"> <b>Country</b></td>
-                <td><input type="text" name="Country" value="USA" maxlength="30" required="" id="id_Country"></td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Local Rate</b></td>
                 <td>
-                    </td><td>
-                        <input type="submit" value="Save" class="btn btn-primary p-2.5 px-5">
-                    </td>
-                
-            </tr>
-        
-    </tbody></table>
-    <br>
-    <h3>Personal Alias Group</h3>
-    <table class="table border table-striped table-bordered table-responsive">
-        <thead>
-            <tr>
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      name="Local_rate"
+                      class="form-control"
+                      value="1"
+                      required=""
+                      id="id_Local_rate"
+                      placeholder="Local Rate"
+                    />
+                    <label for="id_Local_rate">Local Rate</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Out State Rate</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      name="out_state_rate"
+                      class="form-control"
+                      value="1"
+                      required=""
+                      id="id_out_state_rate"
+                      placeholder="Out State Rate"
+                    />
+                    <label for="id_out_state_rate"> Out State Rate</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Background Rate</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      name="background_rate"
+                      value="1"
+                      class="form-control"
+                      required=""
+                      id="id_background_rate"
+                      placeholder="Background Rate"
+                    />
+                    <label for="id_background_rate">Background Rate</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Location</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      name="Location"
+                      value="Los Angeles, CA"
+                      maxlength="100"
+                      class="form-control"
+                      required
+                      placeholder="Location"
+                      id="id_Location"
+                    />
+                    <label for="id_Location">Location</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-md-3"><b>Country</b></td>
+                <td>
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      name="Country"
+                      value="USA"
+                      class="form-control"
+                      maxlength="30"
+                      required=""
+                      id="id_Country"
+                      placeholder="Country"
+                    />
+                    <label for="id_Country">Country</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input
+                    type="submit"
+                    value="Save"
+                    class="btn btn-primary p-2.5 px-5 btn-gradient-sm"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+        <h3>Personal Alias Group</h3>
+        <div class="table-container" style="overflow: auto">
+          <table
+            class="table border table-striped table-bordered table-responsive"
+          >
+            <thead>
+              <tr>
                 <th>Customer ID</th>
                 <th>Alias Group</th>
                 <th>Sub Group</th>
                 <th>Created at</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
                 <td>42</td>
                 <td>BAND STYLES</td>
                 <td>A Cappella</td>
                 <td>Jan. 1, 2023, 2:28 p.m.</td>
-            </tr>
-            
-            <tr>
+              </tr>
+
+              <tr>
                 <td>42</td>
                 <td>BAND STYLES</td>
                 <td>Alternative</td>
                 <td>Jan. 1, 2023, 2:29 p.m.</td>
-            </tr>
-            
-        </tbody>
-    </table>
-    <br>
-    <h3>Personal Keywords</h3>
-    <table class="table border table-striped table-bordered table-responsive">
-        <thead>
-            <tr>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+        <h3>Personal Keywords</h3>
+        <div class="table-container" style="overflow: auto">
+          <table
+            class="table border table-striped table-bordered table-responsive"
+          >
+            <thead>
+              <tr>
                 <th>Customer ID</th>
                 <th>Type</th>
                 <th>Keyword Text</th>
                 <th>Created at</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
                 <td>42</td>
                 <td>PK</td>
                 <td>Average Build</td>
                 <td>Jan. 1, 2023, 2:29 p.m.</td>
-            </tr>
-            
-            <tr>
+              </tr>
+
+              <tr>
                 <td>42</td>
                 <td>PK</td>
                 <td>Atheletic</td>
                 <td>Jan. 1, 2023, 2:29 p.m.</td>
-            </tr>
-            
-            <tr>
+              </tr>
+
+              <tr>
                 <td>42</td>
                 <td>Positive Keyword</td>
                 <td>Singer</td>
                 <td>Jan. 10, 2023, 4:03 p.m.</td>
-            </tr>
-            
-        </tbody>
-    </table>
-</div>
-
+              </tr>
+            </tbody>
+          </table>
         </div>
-    
+      </div>
+    </div>
+
     <script>
-       $(document).ready(function() {
-    $('.selectpicker').select2();
-});
+      $(document).ready(function () {
+        $(".selectpicker").select2();
+      });
     </script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script> -->
-    
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
